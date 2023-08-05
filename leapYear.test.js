@@ -5,9 +5,9 @@ describe('Test suite for leap year kata', () => {
     it('should check to see if type is Boolean', () => {
         expect(typeof leapYear(1)).toBe('boolean')
     });
-    it('should check to see if it can return a Boolean based off the input', () => {
-        expect(leapYear(5)).toBe(false)
-        expect(leapYear(400)).toBe(true)
+    it('should return true if year is divisble by 4', () => {
+        expect(leapYear(4)).toBe(true)
+        expect(leapYear(1600)).toBe(true)
     });
     it('should return false if year is not divisible by 4', () => {
         expect(leapYear(1995)).toBe(false)
